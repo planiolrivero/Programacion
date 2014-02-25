@@ -1,0 +1,24 @@
+// Erroresprd.cpp : Defines the entry point for the console application.
+//Autor: Planiol Rivero Diez
+//Fecha: 25/02/14
+
+#include "stdafx.h"
+#include <iostream> 
+#include "conio.h"
+
+using namespace std;
+
+
+int main() {
+	float base, altura, area;
+    cout<<"          calculo del area del triangulo\n\n";
+	cout<<"ingrese altura:";
+	cin>>altura;
+	cout<<"ingrese base:";
+	cin>>base;
+	area = (base*altura);
+	cout<<"el area del triangulo es:";
+	cout<<area;
+	getch();
+}
+	
