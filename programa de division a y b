@@ -1,0 +1,28 @@
+//programa de division a y b.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+
+void main()
+{
+	int a, b, div;
+ cout<< "ingrese a: ";
+ cin>> a;
+ cout<< "ingrese b: ";
+ cin>> b;
+  if (a%b==0)
+  { 
+ div=a/b;
+ 
+  cout<<"el resultado final."<<div;
+  }
+	  getch();
+
+  
+}
