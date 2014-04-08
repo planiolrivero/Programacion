@@ -1,0 +1,61 @@
+/ ejerciciowhile.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+
+using namespace std;
+void main ()
+{
+	float parcial1, parcial2, parcial3, practica, examen, notafinal;
+	do
+	{
+		cout<<"ingrese parcial1: " ;
+		cin>>parcial1 ;
+	}
+	while ((parcial1>100 ||parcial1<0)&& parcial1 !=-99);
+
+	while (parcial1!=-99)
+	{
+		do
+		{
+			cout<<"ingrese parcial2: ";
+			cin>>parcial2;
+		}
+		while(parcial2>100 ||parcial2<0);
+        do
+		{
+			cout<<"ingrese el parcial 3: ";
+			cin>>parcial3;
+		}
+		while (parcial3<100 ||parcial3<0);
+		do
+		{
+			cout<<"ingrese la practica";
+			cin>>practica;
+		}
+		while (practica>100||practica<0);
+		do
+		{
+			cout<<"ingrese examen: ";
+			cin>>examen;
+		}
+		while (examen>100 ||examen <0);
+		
+		notafinal=((parcial1+parcial2+parcial3)/3)*0.4+practica*0.2+examen*0.4;
+			cout<<"\nnota final: "<<notafinal;
+		do
+		{
+			cout<<"ingrese parcial1: ";
+			cin>>parcial1;
+		}
+		while((parcial1 >100 ||  parcial1<0)&& (parcial1!=-99));
+	}
+	getch();
+}
+
+			
+
