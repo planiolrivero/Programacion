@@ -1,5 +1,5 @@
-// p.cpp : Defines the entry point for the console application.
-// Autor: Belen Pierola Arias
+// mcd.cpp : Defines the entry point for the console application.
+// Autor: Planiol Rivero Diez
 // Fecha: 22/04/14
 
 #include "stdafx.h"
@@ -8,7 +8,6 @@
 
 using namespace std;
 void main()
-
 {
 int a,b,c,menor,mcd,cont;
 cout<<"Ingrese el valor de a:  ";
@@ -34,10 +33,10 @@ while (cont<=menor)
 		b=b/cont;
 		c=c/cont;
 		menor=menor/cont;
-		mcd=mcd/cont;
+		mcd=mcd*cont;
 		cont=cont-1;
 	}
-	cont>cont+1;
+	cont=cont+1;
 }
 cout<<"El maximo comun divisor es:  "<<mcd;
 
