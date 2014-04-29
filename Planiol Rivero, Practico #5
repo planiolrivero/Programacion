@@ -1,0 +1,28 @@
+// planiol.cpp : Defines the entry point for the console application.
+//
+
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "math.h"
+using namespace std;
+
+int main ()
+{ int n, udm, c, d, u;
+cout<<"ingrese el numero: ";
+cin>>n;
+if(n<10000)
+{
+	udm=n/10;
+    c=(n-udm*1000);
+	d=(n-udm*1000-c)/10;
+	u=(n-udm*1000-c-d*10);
+	cout<<"udm: "<<udm<<"/n c: "<<c<<"/n d: "<<d<<"/n u: "<<u;
+}
+else 
+   cout<<"el numero que ingreso es mayor a 10000";
+getch();
+
+
+}
